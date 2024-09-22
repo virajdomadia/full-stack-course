@@ -6,3 +6,7 @@ button.style.height = "100px";
 button.style.width = "100px";
 button.style.background = "red";
 container.appendChild(button);
+
+button.addEventListener("click", () => {
+  alert("button clicked");
+});
