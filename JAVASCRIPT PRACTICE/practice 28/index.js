@@ -14,7 +14,7 @@ async function loadImage(src) {
 async function loadImages() {
   let imgContainer = document.getElementById("imageContainer");
 
-  let imgUrls = ["./image/3.jpg", "./image/4.jpg", "./image/5.jpg"];
+  let imgUrls = ["./image/1.jpg", "./image/4.jpg", "./image/5.jpg"];
   try {
     const images = await Promise.all(imgUrls.map(loadImage));
     images.forEach((image) => imgContainer.appendChild(image));
