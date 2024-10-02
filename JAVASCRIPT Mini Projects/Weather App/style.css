@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px 0 0 12px;
+    border-right: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.input button {
+    width: 30%;
+    padding: 12px;
+    border-radius: 0 12px 12px 0;
+    border-left: none;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-box div {
+    margin-bottom: 12px;
+}
+
+.weather-box .icon img {
+    width: 100px;
+    height: 100px;
+    /* margin-bottom: 12px; */
+}
+
+.weather-box .description {
+    font-size: 24px;
+}
